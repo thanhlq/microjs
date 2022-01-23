@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "allowJs": true,
+    "outDir": "dist",
+    // "isolatedModules": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    //TL Disable for now
+    "strict": false,
+    "types": [
+      "node",
+      "reflect-metadata"
+    ],
+    "paths": {
+      "@microjs/common": ["./packages/common"],
+      "@microjs/common/*": ["./packages/common/*"],
+      "@microjs/core": ["./packages/core"],
+      "@microjs/core/*": ["./packages/core/*"],
+      // "@microjs/microservices": ["./packages/microservices"],
+      // "@microjs/microservices/*": ["./packages/microservices/*"],
+      // "@microjs/testing": ["./packages/testing"],
+      // "@microjs/testing/*": ["./packages/testing/*"],
+      // "@microjs/platform-express": ["./packages/platform-express"],
+      // "@microjs/platform-express/*": ["./packages/platform-express/*"],
+      // "@microjs/platform-ws": ["./packages/platform-ws"],
+      // "@microjs/platform-ws/*": ["./packages/platform-ws/*"],
+      "@microjs/platform-fastify": ["./packages/platform-fastify"],
+      "@microjs/platform-fastify/*": ["./packages/platform-fastify/*"],
+      "@microjs/test-app": ["./packages/test-app"],
+      "@microjs/test-app/*": ["./packages/test-app/*"],
+    }
+  },
+  "include": ["packages/**/*", "integration/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

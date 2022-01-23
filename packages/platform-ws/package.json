@@ -1,0 +1,27 @@
+{
+  "name": "@microjs/platform-ws",
+  "version": "1.0.0",
+  "description": "Microjs - simple, fast, powerful node.js web framework (@ws)",
+  "author": "Thanh LE",
+  "homepage": "https://github.com/thanhlq/microjs",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/microjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thanhlq/microjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "tslib": "2.3.1",
+    "ws": "7.5.6"
+  },
+  "peerDependencies": {
+    "@microjs/common": "^8.0.0",
+    "rxjs": "^7.1.0"
+  }
+}

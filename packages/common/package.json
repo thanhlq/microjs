@@ -1,0 +1,55 @@
+{
+  "name": "@microjs/common",
+  "version": "1.0.0",
+  "description": "Microjs - simple, fast, powerful node.js web framework (@common)",
+  "author": "Thanh LE",
+  "homepage": "https://github.com/thanhlq/microjs",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/microjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thanhlq/microjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "types": "dist/index.d.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "axios": "0.25.0",
+    "iterare": "1.2.1",
+    "tslib": "2.3.1",
+    "uuid": "8.3.2"
+  },
+  "peerDependencies": {
+    "cache-manager": "*",
+    "class-transformer": "*",
+    "class-validator": "*",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^7.5.2"
+  },
+  "peerDependenciesMeta": {
+    "cache-manager": {
+      "optional": true
+    },
+    "class-validator": {
+      "optional": true
+    },
+    "class-transformer": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/qs": "^6.9.7",
+    "@types/pino": "^7.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "typescript": "^4.5.5"
+  },
+  "license": "MIT"
+}
